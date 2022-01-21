@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import Alert from "./Alert";
+import RecipeCard from "./RecipeCard";
+import RecipeDetails from "./RecipeDetails";
 
 function SearchBar(){
   
@@ -14,8 +16,7 @@ function SearchBar(){
         if(query !== ""){
             fetch(queryRequest)
             .then((res) => res.json())
-            .then(data => console.log(data.results))
-            
+            .then(data => setRecipes(data.results))
             setQuery("");
             setAlert("");
         }else{
@@ -46,6 +47,7 @@ function SearchBar(){
                 <input type="submit" value="Search" />
             </form>
             <div>
+                <RecipeCard recipes = {recipes} />
             </div>
 
         </div>
