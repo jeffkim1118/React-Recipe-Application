@@ -1,1 +1,7 @@
-
+*{
+    margin: none;
+}
+html{
+    margin: none;
+    width: 100%;
+}
