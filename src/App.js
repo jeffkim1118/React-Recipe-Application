@@ -8,7 +8,7 @@ function App() {
   useEffect(()=>{
     getData();
 
-    const getData = () => fetch("https://api.spoonacular.com/recipes/random/apiKey=5c28e37ff52340769cc4e6978685e652")
+    const getData = () => fetch("https://api.spoonacular.com/recipes/random?number=10&apiKey=5c28e37ff52340769cc4e6978685e652")
     .then(res => res.json())
     .data(data => setRandResp(data))
   }, [])

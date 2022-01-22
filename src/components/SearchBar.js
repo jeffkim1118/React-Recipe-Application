@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Alert from "./Alert";
 import RecipeCard from "./RecipeCard";
 import RecipeDetails from "./RecipeDetails";
@@ -24,7 +24,14 @@ function SearchBar(){
         }
     }
 
-    const onChange = e => setQuery(e.target.value);
+    const onChange = (e) => {
+        setQuery(e.target.value);
+        useEffect(()=>{
+            fetch("https://api.spoonacular.com/recipes/autocomplete?number=5")
+            .then(res => res.json())
+            .then(data => console.log(data.result.title))
+        }, [])
+    }
 
     const onSubmit = e => {
         e.preventDefault();
