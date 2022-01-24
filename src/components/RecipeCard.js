@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import RecipeDetails from "./RecipeDetails";
+import "../App.css";
 
 const RecipeCard = props => (
     <div className="container">
@@ -24,7 +25,7 @@ const RecipeCard = props => (
                                     pathname: `/recipes/${recipes.id}`,
                                     state: {recipes: recipes.title}
                                 }}>View Recipe</Link> */}
-                            </button>
+                            View Recipe</button>
                         </div>
                     </div>
                 )

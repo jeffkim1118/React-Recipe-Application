@@ -1,8 +1,10 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import '../App.css';
 import Alert from "./Alert";
 import RecipeCard from "./RecipeCard";
 import RecipeDetails from "./RecipeDetails";
+
 
 function SearchBar(){
   
@@ -42,12 +44,13 @@ function SearchBar(){
                     Search Your Recipes!                  
                 </label>
                 <br></br>
-                <input type="text" 
+                <input type="text"
+                    className="input-text"
                     placeholder="Search" 
                     value={query}
                     onChange={onChange}
                 />
-                <input type="submit" value="Search" />
+                <input className="submitBtn" type="submit" value="Search" />
             </form>
             <div>
                 <RecipeCard recipes = {recipes} />
