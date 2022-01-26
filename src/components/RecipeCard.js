@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
-import { useHistory } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 import "../App.css";
+import RecipeDetails from "./RecipeDetails";
 
 const RecipeCard = props => {
-    const { id } = useParams()
+    console.log(props.recipes);
     const history = useHistory();
-    const routeChange = () => {
-        let path = `/recipedetails`;
-        history.push(path);
+    // const { id } = useParams();
+    const routeChange = () => {     
+        // <Route exact path="/recipedetails/:id" render={({match})=>(
+        //     <RecipeDetails recipedetails={props.find(p => p.id === match.params.id)} />
+        // )} />
+    
+    let path = `/recipedetails`;
+    history.push(path);
     }
     return(
         <div className="container">
