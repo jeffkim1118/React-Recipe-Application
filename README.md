@@ -4,9 +4,9 @@ Recipes Finder
 - Input error warning
 - Recipes cards
 - Recipes ingredients
-- 
+- Recipes Details
 
 3 Client routing:
-- Display random 10 recipes
+- Recipes cards
 - 
 - 

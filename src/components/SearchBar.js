@@ -7,7 +7,6 @@ import RecipeDetails from "./RecipeDetails";
 
 
 function SearchBar(){
-  
     const [query, setQuery] = useState("");
     const [recipes, setRecipes] = useState([]);
     const [alert, setAlert] = useState("");
