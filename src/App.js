@@ -2,7 +2,6 @@ import './App.css';
 import SearchBar from './components/SearchBar';
 import RecipeCard from './components/RecipeCard';
 import React from 'react';
-import { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,11 +15,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-          <Route exact path="/recipedetails" component={RecipeDetails} />
-  
+          <Route exact path="/recipedetails">
+             <RecipeDetails />
+          </Route>
           <Route exact={true} path="/" component={SearchBar} />
-
-        </Switch>
+      </Switch>
     </div>
   );
 }
