@@ -5,7 +5,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import RecipeDetails from './components/RecipeDetails';
 
@@ -14,9 +13,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-          <Route exact path="/recipedetails/:id">
-             <RecipeDetails />
-          </Route>
+          <Route exact path="/recipedetails/:id" component={RecipeDetails} />
           <Route exact={true} path="/" component={SearchBar} />
       </Switch>
     </div>

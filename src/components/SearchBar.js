@@ -19,6 +19,7 @@ function SearchBar(){
             setQuery("");
             setAlert("");
         }else{
+            // If the user doesn't submit any text into the input, it creates an alert.
             setAlert("Please fill the form");
         }
     }
@@ -50,6 +51,7 @@ function SearchBar(){
                 <input className="submitBtn" type="submit" value="Search" />
             </form>
             <div>
+                {/* Pass recipes data as a prop to RecipeCard component */}
                 <RecipeCard recipes = {recipes} />
             </div>
 
