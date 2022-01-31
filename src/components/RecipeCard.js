@@ -5,21 +5,9 @@ import { Route, useHistory } from "react-router-dom";
 import "../App.css";
 import RecipeDetails from "./RecipeDetails";
 
-const RecipeCard = props => {
-    // console.log(props.recipes);
-    // const history = useHistory();
-    // const { id } = useParams();
-    // const routeChange = () => {     
-    //     // <Route exact path="/recipedetails/:id" render={({match})=>(
-    //     //     <RecipeDetails recipedetails={props.find(p => p.id === match.params.id)} />
-    //     // )} />
-    
-    // let path = `/recipedetails`;
-    // history.push(path);
-    // }
+const RecipeCard = props => {  
     return(
         <div className="container">
-        {/* {console.log(props)}   */}
         <div className="row">
             {props.recipes.map((recipes)=>{
                 return(
@@ -35,14 +23,11 @@ const RecipeCard = props => {
                                     { recipes.title.length < 20 ? `${recipes.title}` : `${recipes.title.substring(0, 25)}...` }
                                 </h5>
                             </div>
-                            
-                            <li key={recipes.id}>
-                                <Link to={`/recipedetails/${recipes.id}`}>{recipes[recipes.id]}Enter</Link>
-                            </li>
-                            
-                            {/* <button className="recipe-buttons" onClick={routeChange}>                            
-                                View Recipe
-                            </button> */}
+                            {/* {console.log(recipes.id)}                            */}
+                                <Link to={{
+                                    pathname:`/recipedetails/${recipes.id}`,
+                                    state: { recipes: recipes.title}
+                                }}>View Recipe</Link>                                                                
                         </div>
                     </div>
                 )

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import RecipeCard from './RecipeCard';
 
-function RecipeDetails({recipes}){
-    console.log(recipes)
+function RecipeDetails({props}){
+    console.log(props)
+    
     return(
         <div>
             <p>Hello</p>

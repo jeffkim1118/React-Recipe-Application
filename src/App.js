@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-          <Route exact path="/recipedetails">
+          <Route exact path="/recipedetails/:id">
              <RecipeDetails />
           </Route>
           <Route exact={true} path="/" component={SearchBar} />
