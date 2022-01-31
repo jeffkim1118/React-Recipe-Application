@@ -1,10 +1,8 @@
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import '../App.css';
 import Alert from "./Alert";
 import RecipeCard from "./RecipeCard";
-import RecipeDetails from "./RecipeDetails";
-
 
 function SearchBar(){
     const [query, setQuery] = useState("");

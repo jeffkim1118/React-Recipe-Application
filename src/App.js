@@ -1,6 +1,5 @@
 import './App.css';
 import SearchBar from './components/SearchBar';
-import RecipeCard from './components/RecipeCard';
 import React from 'react';
 import {
   BrowserRouter as Router,

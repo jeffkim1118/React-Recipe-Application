@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
 import { Link } from "react-router-dom";
-import { Route, useHistory } from "react-router-dom";
 import "../App.css";
-import RecipeDetails from "./RecipeDetails";
 
 const RecipeCard = props => {  
     return(
