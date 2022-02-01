@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <Switch>
-          <Route path="/cardcontainer/:title" component={CardContainer} />
+          <Route path="/cardcontainer" component={CardContainer} />
           <Route exact path="/recipedetails/:id" component={RecipeDetails} />
           <Route exact={true} path="/" component={SearchBar} />
       </Switch>
