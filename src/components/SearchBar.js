@@ -14,7 +14,7 @@ function SearchBar(){
     const getData = () => {
         if(query !== ""){
             fetch(queryRequest)
-            .then((res) => res.json())
+            .then(res => res.json())
             .then(data => setRecipes(data.results))
             setQuery("");
             setAlert("");
@@ -25,7 +25,7 @@ function SearchBar(){
     }
 
     const onChange = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
         setQuery(e.target.value);
     }
 
