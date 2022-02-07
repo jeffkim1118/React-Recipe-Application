@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import '../App.css';
 import Alert from "./Alert";
 import RecipeCard from "./RecipeCard";
@@ -36,12 +37,13 @@ function SearchBar(){
 
     return(
         <div className="SearchBar">
-            <form onSubmit={onSubmit}>
-            {alert !== "" && <Alert alert={alert} />}
+            <form className= "SearchForm" onSubmit={onSubmit}>
                 <label>
                     Search Your Recipes!                  
                 </label>
-                <br></br>
+                <br/>
+                <Link to='/LikedRecipes'>View my favorite Recipes!</Link>
+                <br/><br/>
                 <input type="text"
                     className="input-text"
                     placeholder="Search" 
@@ -49,7 +51,9 @@ function SearchBar(){
                     onChange={onChange}
                 />
                 <input className="submitBtn" type="submit" value="Search" />
+                {alert !== "" && <Alert alert={alert} />}
             </form>
+            
             <div>
                 {/* Pass recipes data as a prop to RecipeCard component */}
                 <RecipeCard recipes = {recipes} />

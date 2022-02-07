@@ -1,7 +1,8 @@
-import react from "react";
+import "../App.css";
 import { Link } from "react-router-dom";
 
 export default function CardContainer(props){
+    //Destructuring props to access recipe object
     const {recipe} = props;
     console.log(recipe);
     return(
@@ -22,7 +23,7 @@ export default function CardContainer(props){
                                 <Link to={{
                                     pathname:`/recipedetails/${recipe.id}`,
                                     state: { recipes: recipe.title}
-                                }}>View Recipe</Link>                                                                
+                                }}>View Recipe</Link>                                                              
                         </div>
                     </div>
     )

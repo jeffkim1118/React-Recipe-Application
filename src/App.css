@@ -34,6 +34,17 @@ label{
     background-color: azure;
 }
 
+.SearchForm{
+    width: 100%;
+    height: fit-content;
+    margin: none;
+}
+
+.SearchBar{
+    width: 100%;
+    margin: none;  
+}
+
 .submitBtn{
     border: none;
     height: 37px;
@@ -51,4 +62,16 @@ label{
 
 .recipes-box{
     margin: 5px;
+}
+
+.alert{
+    color: red;
+}
+.alertText{
+    margin: none;
+}
+
+
+.likedRecipePic{
+    width: 200px;
 }
