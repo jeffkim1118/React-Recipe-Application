@@ -1,15 +1,17 @@
 Simple Recipes Finder
 
-5 components:
+6 components:
 - Input error warning
 - Recipes cards
 - Card Container
 - Recipes Details
+- Liked Recipe Page
 
 3 Client routing:
 - Recipes cards
 - Card Container
 - Landing Page
+- Liked Recipe page
 
 ![image](https://user-images.githubusercontent.com/64029918/152034898-2b379e0c-7dc9-46b1-8072-b8d4bb6db672.png)
 I created a simple recipe finder using spoonacular API and React JS framework.
