@@ -2,7 +2,7 @@ import './App.css';
 import SearchBar from './components/SearchBar';
 import React from 'react';
 import {
-  BrowserRouter as Router,
+  // BrowserRouter as Router,
   Switch,
   Route,
 } from "react-router-dom";

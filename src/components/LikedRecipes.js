@@ -36,7 +36,7 @@ export default function LikedRecipes(){
                     return(
                         <div key={items} className="item-container">
                             <p key={items.id}>{items.title}</p>
-                            <img className="likedRecipePic" key={items.img} src={items.img}/><br/>
+                            <img className="likedRecipePic" alt="food-pic" key={items.img} src={items.img}/><br/>
                             <button onClick={deleteFav}>Delete</button>
                         </div>                       
                     )
