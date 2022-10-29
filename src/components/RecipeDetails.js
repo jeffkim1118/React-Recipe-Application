@@ -28,7 +28,7 @@ function RecipeDetails(){
 
     
     const addToFav = () =>{
-        fetch('http://localhost:8000/items/', {
+        fetch('http://localhost:4000/items/', {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -51,12 +51,10 @@ function RecipeDetails(){
             <button onClick={addToFav}>Like</button>
             <br />
             <br />
-            <a href={recipe.sourceUrl} target="_blank" rel="noreferrer">View the recipe</a>
+            <a href={recipe.sourceUrl} target="_blank" rel="noopener noreferrer">View the recipe</a>
             <br/>
             <br/>
             <Link to='/'>Go Back</Link>
-            
-            
         </div>
     )
 }
