@@ -61,3 +61,7 @@ Each recipes provides an image of the recipe, title, and the link. The link take
 
 In addition, there is a "Go back" button to go back to the search page.
 ![image](https://user-images.githubusercontent.com/64029918/152035638-c128d9d5-8f7e-457e-a5ca-c81b3979cb01.png)
+
+
+## License
+MIT
