@@ -21,21 +21,36 @@ I'm currently updating my old recipe web application project with new UI.
 
 ## Installation
 
-``` 
 //First enter this into your console and press enter:
+``` 
+$ npm install
+```
+It uses JSON server as backend.
+Please download JSON server globally by:
 
-npm install
+```
+$ npm install -g json-server
+```
+To run the frontend, use the command:
 
-//It uses JSON server as backend
-//Please download JSON server by:
-
-npm install -g json-server
-
-//Run the 
+```
+$ npm start
 ```
 
+To run the JSON server, use the command:
 
+```
+$ npm run server #
+```
+The Json server is set to run on Localhost: 4000 at the moment but, you can always change that by accessing script section in the package.json file.
+It should look like this:
 
+```
+// Change the number after "port" to change the JSON port number.
+"server": "json-server --watch db.json --port 4000"
+```
+
+## Recipe web application (Outdated look)
 
 ![image](https://user-images.githubusercontent.com/64029918/152034898-2b379e0c-7dc9-46b1-8072-b8d4bb6db672.png)
 I created a simple recipe finder using spoonacular API and React JS framework.
