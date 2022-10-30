@@ -1,11 +1,9 @@
-###Simple Recipes Finder
+### Simple Recipes Finder
 
 
 ## Current Update
 I'm currently updating my old recipe web application project with new UI.
 ![image](https://user-images.githubusercontent.com/64029918/198901095-1570fc06-9323-438f-b5c1-9ab31c4dedf2.png)
-
-
 
 
 6 components:
@@ -20,6 +18,24 @@ I'm currently updating my old recipe web application project with new UI.
 - Card Container
 - Landing Page
 - Liked Recipe page
+
+## Installation
+
+``` 
+//First enter this into your console and press enter:
+
+npm install
+
+//It uses JSON server as backend
+//Please download JSON server by:
+
+npm install -g json-server
+
+//Run the 
+```
+
+
+
 
 ![image](https://user-images.githubusercontent.com/64029918/152034898-2b379e0c-7dc9-46b1-8072-b8d4bb6db672.png)
 I created a simple recipe finder using spoonacular API and React JS framework.
