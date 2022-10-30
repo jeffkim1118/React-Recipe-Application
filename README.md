@@ -21,7 +21,7 @@ I'm currently updating my old recipe web application project with new UI.
 
 ## Installation
 
-//First enter this into your console and press enter:
+First enter this into your console and press enter:
 ``` 
 $ npm install
 ```
