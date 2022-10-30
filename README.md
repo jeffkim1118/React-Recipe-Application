@@ -1,4 +1,12 @@
-Simple Recipes Finder
+###Simple Recipes Finder
+
+
+## Current Update
+I'm currently updating my old recipe web application project with new UI.
+![image](https://user-images.githubusercontent.com/64029918/198901095-1570fc06-9323-438f-b5c1-9ab31c4dedf2.png)
+
+
+
 
 6 components:
 - Input error warning
