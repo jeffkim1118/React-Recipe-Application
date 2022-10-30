@@ -37,13 +37,8 @@ function SearchBar(){
 
     return(
         <div className="SearchBar">
+            <div className="SearchBarContainer">
             <form className= "SearchForm" onSubmit={onSubmit}>
-                <label>
-                    Search Your Recipes!                  
-                </label>
-                <br/>
-                <Link to='/LikedRecipes'>View my favorite Recipes!</Link>
-                <br/><br/>
                 <input type="text"
                     className="input-text"
                     placeholder="Search" 
@@ -53,8 +48,8 @@ function SearchBar(){
                 <input className="submitBtn" type="submit" value="Search" />
                 {alert !== "" && <Alert alert={alert} />}
             </form>
-            
-            <div>
+            </div>
+            <div className="recipe-container">
                 {/* Pass recipes data as a prop to RecipeCard component */}
                 <RecipeCard recipes = {recipes} />
             </div>

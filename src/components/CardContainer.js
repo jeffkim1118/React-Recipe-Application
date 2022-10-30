@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function CardContainer(props){
     //Destructuring props to access recipe object
     const {recipe} = props;
-    console.log(recipe);
+    console.log(recipe)
     return(
         <div key={recipe.title} >
                         <div className="recipes-box">

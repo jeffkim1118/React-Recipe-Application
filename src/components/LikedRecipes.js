@@ -11,6 +11,7 @@ export default function LikedRecipes(){
     // useEffect(() => {
     //     localStorage.setItem('dataKey', JSON.stringify(data));
     // },[data])
+    
 
     useEffect(()=>{
         fetch('http://localhost:4000/items/', {
@@ -20,6 +21,7 @@ export default function LikedRecipes(){
         .then(data => storeItems(data))
     },[]);
 
+    
     const deleteFav = (id) => {
         fetch(`http://localhost:4000/items/${id}`, {
             method: "DELETE",
@@ -37,11 +39,13 @@ export default function LikedRecipes(){
             <Link to='/'>Go Back</Link>
             <div>
                 {likedItem.map((items) => {
+                    console.log(likedItem)
                     return(
                         <div key={items} className="item-container">
+                            <p>{items.id}</p>
                             <p key={items.id}>{items.title}</p>
                             <img className="likedRecipePic" alt="food-pic" key={items.img} src={items.img}/><br/>
-                            {/* <button onClick={deleteFav}>Delete</button> */}
+                            <button onClick={deleteFav(items.id)}>Delete</button>
                         </div>                       
                     )
                 })}
